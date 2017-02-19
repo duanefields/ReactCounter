@@ -19,9 +19,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "npm run build",
     "configure": "aws s3 mb s3://react-counter.fastwombat.com && aws s3 website s3://react-counter.fastwombat.com/ --index-document index.html --error-document error.html",
-    "deploy": "aws s3 sync build/ s3://react-counter.fastwombat.com",
-    "eject": "react-scripts eject"
+    "predeploy-client": "npm run build",
+    "deploy": "npm run deploy-server && npm run deploy-client",
+    "deploy-server": "sls deploy",
+    "deploy-client": "aws s3 sync build/ s3://react-counter.fastwombat.com"
   }
 }
