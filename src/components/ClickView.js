@@ -8,7 +8,7 @@ export default class ClickView extends Component {
     const click = this.props.click;
     return (
       <li className="list-group-item">
-        { `${click.date}` }
+        Client: {`${click.date}`}, Server: {`${click.serverDate}`}
       </li>
     );
   }

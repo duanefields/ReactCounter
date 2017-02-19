@@ -60,7 +60,7 @@ package:
 
 functions:
   hello:
-    handler: lamda/handler.hello
+    handler: lamdas/handler.hello
     events:
       - http:
           path: hello
