@@ -1,6 +1,7 @@
 {
   "name": "ReactCounter",
   "version": "0.1.0",
+  "homepage": "http://react-counter.fastwombat.com",
   "private": true,
   "devDependencies": {
     "custom-react-scripts": "0.0.23"
