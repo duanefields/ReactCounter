@@ -7,7 +7,7 @@ export default class ClickView extends Component {
   render() {
     const click = this.props.click;
     return (
-      <li>
+      <li className="list-group-item">
         { `${click.date}` }
       </li>
     );

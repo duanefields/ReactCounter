@@ -11,12 +11,17 @@ export default class ClickList extends Component {
         <div>
           { store.report }
         </div>
-        <button onClick={ this.onNewClick }>New Click</button>
-        <ul>
+
+        <button className="btn btn-primary" onClick={ this.onNewClick }>
+          New Click
+        </button>
+
+        <ul className="list-group">
         { store.clicks.map(
           (click, idx) => <ClickView click={ click } key={ idx } />
         ) }
         </ul>
+
         { store.pendingRequests > 0 ? <marquee>Loading...</marquee> : null }
       </div>
     );
