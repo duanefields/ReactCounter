@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import { Router, Route, browserHistory } from 'react-router';
-import { Provider } from 'mobx-react';
-import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
+// import { Router, Route, browserHistory } from 'react-router';
+// import { Provider } from 'mobx-react';
+// import { RouterStore, syncHistoryWithStore } from 'mobx-react-router';
 
-import { ClickButton } from './components';
+import { ClickList } from './components';
+import { ClickStore } from './lib/stores';
 
 export default class App extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class App extends Component {
     return (
       <div>
         <h1>Hello, {name}</h1>
-        <ClickButton />
+        <ClickList store={ClickStore} />
       </div>
     );
   }
