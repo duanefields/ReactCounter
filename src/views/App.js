@@ -15,10 +15,10 @@ export default class App extends Component {
           <div id="navbarSupportedContent" className="collapse navbar-collapse">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/counter">Counter</Link>
+                <Link className="nav-link" activeClassName="active" to="/counter">Counter</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">About</Link>
+                <Link className="nav-link" activeClassName="active" to="/about">About</Link>
               </li>
             </ul>
           </div>
