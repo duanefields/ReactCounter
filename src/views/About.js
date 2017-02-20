@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router'
 
 export default class About extends Component {
   render() {
@@ -7,7 +6,6 @@ export default class About extends Component {
       <div>
         <h1>About This App</h1>
         <p>Just a test...</p>
-        <Link to="/">Back to App</Link>
       </div>
     );
   }
