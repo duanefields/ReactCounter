@@ -6,6 +6,7 @@ export default class Counter extends Component {
   render() {
     return (
       <div>
+        <h1 className="blue">The Counter</h1>
         <ClickList store={ClickStore} />
       </div>
     );
