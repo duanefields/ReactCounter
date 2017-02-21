@@ -8,6 +8,8 @@ AWS Client
 
 `brew install aws`
 
+Online at http://react-counter.fastwombat.com
+
 ## Original README
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
